@@ -1,15 +1,16 @@
-Description: <short summary of the patch>
-Author: Hideki Yamane <henrich@debian.org>
+From: Debian QA Group <packages@qa.debian.org>
+Date: Sat, 5 Sep 2015 18:13:59 +0900
+Subject: hurd_support
 
 ---
-Origin: vendor
-Forwarded: no
-Last-Update: 2013-01-27
+ Wnn/include/msg.h       | 9 +++++++++
+ Wnn/jserver/de_header.h | 8 ++++++++
+ 2 files changed, 17 insertions(+)
 
-Index: freewnn-1.1.1~a021+cvs20120618/Wnn/include/msg.h
-===================================================================
---- freewnn-1.1.1~a021+cvs20120618.orig/Wnn/include/msg.h	2013-01-29 09:45:13.318848278 +0900
-+++ freewnn-1.1.1~a021+cvs20120618/Wnn/include/msg.h	2013-01-29 09:45:39.558897063 +0900
+diff --git a/Wnn/include/msg.h b/Wnn/include/msg.h
+index 74bb490..315f734 100644
+--- a/Wnn/include/msg.h
++++ b/Wnn/include/msg.h
 @@ -41,6 +41,15 @@
  #include <sys/param.h>
  #endif
@@ -26,10 +27,10 @@ Index: freewnn-1.1.1~a021+cvs20120618/Wnn/include/msg.h
  struct msg_bd
  {
    int msg_id;
-Index: freewnn-1.1.1~a021+cvs20120618/Wnn/jserver/de_header.h
-===================================================================
---- freewnn-1.1.1~a021+cvs20120618.orig/Wnn/jserver/de_header.h	2012-06-18 10:48:32.183480413 +0900
-+++ freewnn-1.1.1~a021+cvs20120618/Wnn/jserver/de_header.h	2013-01-29 10:15:43.151173132 +0900
+diff --git a/Wnn/jserver/de_header.h b/Wnn/jserver/de_header.h
+index bfc0126..1bc2ee5 100644
+--- a/Wnn/jserver/de_header.h
++++ b/Wnn/jserver/de_header.h
 @@ -69,6 +69,14 @@
  #define MAX_FILES       600
  #define MAX_DIC         1200

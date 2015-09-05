@@ -4,3 +4,4 @@ man
 hardening-flags
 hurd_support.patch
 fix-parallel-build.patch
+0007-add-egrep-binary-files-text-option.patch

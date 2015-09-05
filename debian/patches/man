@@ -1,237 +1,216 @@
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/4.cmd/jserver.man
+From: Debian QA Group <packages@qa.debian.org>
+Date: Sat, 5 Sep 2015 18:13:59 +0900
+Subject: man
+
 ===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/4.cmd/jserver.man	2002-06-23 02:58:56.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/4.cmd/jserver.man	2010-03-27 16:27:17.000000000 +0900
+---
+ Wnn/man.en/6.jutil/atod.man              | 2 +-
+ Wnn/man.en/6.jutil/atof.man              | 2 +-
+ Wnn/man.en/6.jutil/dtoa.man              | 2 +-
+ Wnn/man/2.env/dic/pubdic.man             | 4 ++--
+ Wnn/man/2.env/dic/usr_dic.man            | 4 ++--
+ Wnn/man/2.env/wnn/2a_ctrl.man            | 4 ++--
+ Wnn/man/2.env/wnn/2b_romkan.man          | 4 ++--
+ Wnn/man/2.env/wnn/cvt_key.man            | 4 ++--
+ Wnn/man/2.env/wnn/fzk.data.man           | 2 +-
+ Wnn/man/2.env/wnn/fzk.u.man              | 2 +-
+ Wnn/man/2.env/wnn/hinsi_dat.man          | 2 +-
+ Wnn/man/2.env/wnn/jserverrc.man          | 2 +-
+ Wnn/man/2.env/wnn/mode.man               | 4 ++--
+ Wnn/man/2.env/wnn/serverdef.man          | 4 ++--
+ Wnn/man/2.env/wnn/ujis_dic.man           | 2 +-
+ Wnn/man/2.env/wnn/uumkey.man             | 4 ++--
+ Wnn/man/2.env/wnn/uumrc.man              | 6 +++---
+ Wnn/man/2.env/wnn/wnnenvrc.man           | 4 ++--
+ Wnn/man/3.libwnn/jl_lib/bun_suu.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/c_zenko.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/close.man        | 2 +-
+ Wnn/man/3.libwnn/jl_lib/connect.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/connect_lang.man | 2 +-
+ Wnn/man/3.libwnn/jl_lib/dai_top.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/dic_add.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/dic_com_s.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/dic_del.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/dic_list.man     | 2 +-
+ Wnn/man/3.libwnn/jl_lib/dic_save.man     | 2 +-
+ Wnn/man/3.libwnn/jl_lib/dic_use.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/disconn.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/env.man          | 2 +-
+ Wnn/man/3.libwnn/jl_lib/env_set.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/env_stick.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/fuz_get.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/fuz_set.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/get_kanji.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/get_zen_k.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/hinsi_dct.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/hinsi_lst.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/hinsi_nm.man     | 2 +-
+ Wnn/man/3.libwnn/jl_lib/hinsi_num.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/inspect.man      | 2 +-
+ Wnn/man/3.libwnn/jl_lib/isconnect.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/jiri_len.man     | 2 +-
+ Wnn/man/3.libwnn/jl_lib/kanji_len.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/kill.man         | 2 +-
+ Wnn/man/3.libwnn/jl_lib/next.man         | 2 +-
+ Wnn/man/3.libwnn/jl_lib/nobi_conv.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/open.man         | 2 +-
+ Wnn/man/3.libwnn/jl_lib/open_lang.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/param_get.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/ren_conv.man     | 2 +-
+ Wnn/man/3.libwnn/jl_lib/set_env_w.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/set_jikou.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/tan_conv.man     | 2 +-
+ Wnn/man/3.libwnn/jl_lib/update_hd.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/word_add.man     | 2 +-
+ Wnn/man/3.libwnn/jl_lib/word_cm_s.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/word_del.man     | 2 +-
+ Wnn/man/3.libwnn/jl_lib/word_info.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/word_srch.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/word_use.man     | 2 +-
+ Wnn/man/3.libwnn/jl_lib/zenko.man        | 2 +-
+ Wnn/man/3.libwnn/jl_lib/zenko_bun.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/zenko_da.man     | 2 +-
+ Wnn/man/3.libwnn/jl_lib/zenko_dap.man    | 2 +-
+ Wnn/man/3.libwnn/jl_lib/zenko_suu.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/access.man       | 2 +-
+ Wnn/man/3.libwnn/js_lib/close.man        | 2 +-
+ Wnn/man/3.libwnn/js_lib/connect.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/dic_add.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/dic_cr.man       | 2 +-
+ Wnn/man/3.libwnn/js_lib/dic_cr_cl.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/dic_del.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/dic_info.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/dic_lst.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/dic_lst_a.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/dic_use.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/disconn.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/env_exist.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/env_list.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/env_stick.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_com_s.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_disc.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_info.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_list.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_list_a.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_load.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_load_l.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_pswd_s.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_read.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_recv.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_rm.man        | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_rm_cl.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_snd.man       | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_stat.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/fl_wrt.man       | 2 +-
+ Wnn/man/3.libwnn/js_lib/fuz_get.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/fuz_set.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/hd_cr.man        | 2 +-
+ Wnn/man/3.libwnn/js_lib/hd_cr_cl.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/hindo_set.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/hinsi_dct.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/hinsi_lst.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/hinsi_nm.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/hinsi_num.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/hinsi_t_s.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/isconnect.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/kanren.man       | 2 +-
+ Wnn/man/3.libwnn/js_lib/kantan_d.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/kantan_s.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/kanzen_d.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/kanzen_s.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/kill.man         | 2 +-
+ Wnn/man/3.libwnn/js_lib/mkdir.man        | 2 +-
+ Wnn/man/3.libwnn/js_lib/open.man         | 2 +-
+ Wnn/man/3.libwnn/js_lib/open_lang.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/param_get.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/set_lang.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/version.man      | 2 +-
+ Wnn/man/3.libwnn/js_lib/who.man          | 2 +-
+ Wnn/man/3.libwnn/js_lib/word_add.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/word_cm_s.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/word_del.man     | 2 +-
+ Wnn/man/3.libwnn/js_lib/word_info.man    | 2 +-
+ Wnn/man/3.libwnn/js_lib/word_srch.man    | 2 +-
+ Wnn/man/3.libwnn/misc_lib/msg_cl.man     | 2 +-
+ Wnn/man/3.libwnn/misc_lib/msg_get.man    | 2 +-
+ Wnn/man/3.libwnn/misc_lib/msg_open.man   | 2 +-
+ Wnn/man/3.libwnn/rk_lib/rk_clear.man     | 2 +-
+ Wnn/man/3.libwnn/rk_lib/rk_dspmd.man     | 2 +-
+ Wnn/man/3.libwnn/rk_lib/rk_getc.man      | 2 +-
+ Wnn/man/3.libwnn/rk_lib/rk_init.man      | 2 +-
+ Wnn/man/3.libwnn/rk_lib/rk_next.man      | 2 +-
+ Wnn/man/3.libwnn/rk_lib/rk_ungetc.man    | 2 +-
+ Wnn/man/4.cmd/jserver.man                | 2 +-
+ Wnn/man/4.cmd/uum.man                    | 2 +-
+ Wnn/man/4.cmd/wnnkill.man                | 2 +-
+ Wnn/man/4.cmd/wnnstat.man                | 2 +-
+ Wnn/man/6.jutil/atod.man                 | 4 ++--
+ Wnn/man/6.jutil/atof.man                 | 2 +-
+ Wnn/man/6.jutil/dtoa.man                 | 2 +-
+ Wnn/man/6.jutil/oldtonew.man             | 2 +-
+ Wnn/man/6.jutil/wddel.man                | 2 +-
+ Wnn/man/6.jutil/wdreg.man                | 2 +-
+ Wnn/man/6.jutil/wnntouch.man             | 2 +-
+ cWnn/man/1.intro/cst_end.man             | 2 +-
+ cWnn/man/1.intro/cwnn.man                | 2 +-
+ cWnn/man/2.env/cenv.man                  | 2 +-
+ cWnn/man/2.env/ckey.man                  | 2 +-
+ cWnn/man/4.cmd/cserver.man               | 2 +-
+ cWnn/man/4.cmd/cuum.man                  | 2 +-
+ cWnn/man/4.cmd/cwnnkill.man              | 2 +-
+ cWnn/man/4.cmd/cwnnstat.man              | 2 +-
+ cWnn/man/6.jutil/catod.man               | 2 +-
+ cWnn/man/6.jutil/catof.man               | 2 +-
+ cWnn/man/6.jutil/cdicsort.man            | 2 +-
+ cWnn/man/6.jutil/cdtoa.man               | 2 +-
+ cWnn/man/6.jutil/cwddel.man              | 2 +-
+ cWnn/man/6.jutil/cwdreg.man              | 2 +-
+ cWnn/man/6.jutil/cwnntouch.man           | 2 +-
+ 162 files changed, 174 insertions(+), 174 deletions(-)
+
+diff --git a/Wnn/man.en/6.jutil/atod.man b/Wnn/man.en/6.jutil/atod.man
+index 06b2bcd..a077c35 100644
+--- a/Wnn/man.en/6.jutil/atod.man
++++ b/Wnn/man.en/6.jutil/atod.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  .\"
--.TH JSERVER \  "23 June 2001" 
-+.TH JSERVER 8  "23 June 2001" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/4.cmd/uum.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/4.cmd/uum.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/4.cmd/uum.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH UUM \  "28 January 1992" 
-+.TH UUM 1  "28 January 1992" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/4.cmd/wnnkill.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/4.cmd/wnnkill.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/4.cmd/wnnkill.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH WNNKILL \  "28 January 1992" 
-+.TH WNNKILL 8  "28 January 1992" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/4.cmd/wnnstat.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/4.cmd/wnnstat.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/4.cmd/wnnstat.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH WNNSTAT \  "28 January 1992" 
-+.TH WNNSTAT 1  "28 January 1992" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/atod.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/6.jutil/atod.man	2001-06-18 18:09:48.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/atod.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH ATOD \  "28 January 1992" 
-+.TH ATOD 1  "28 January 1992" 
- .SH 名称
- .sv 1
- .nf
-@@ -67,7 +67,7 @@
- 
- UJIS の場合の CSWIDTH は 2,1,2 である。
- 
---s は、割当てるメモリの量を指定するオプションであるが、通常は指定する必要
-+\-s は、割当てるメモリの量を指定するオプションであるが、通常は指定する必要
- はない。atod がメモリ領域不足のメッセージを表示して終了した場合に、-s を
- 指定して再実行させる。
- 
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/atof.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/6.jutil/atof.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/atof.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH ATOF \  "28 January 1992" 
-+.TH ATOF 1  "28 January 1992" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/dtoa.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/6.jutil/dtoa.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/dtoa.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH DTOA \  "28 January 1992" 
-+.TH DTOA 1  "28 January 1992" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/oldtonew.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/6.jutil/oldtonew.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/oldtonew.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH OLDATONEWA \  "28 January 1992" 
-+.TH OLDATONEWA 1  "28 January 1992" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/wddel.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/6.jutil/wddel.man	2002-03-02 19:30:23.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/wddel.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH WDDEL \  "28 January 1992" 
-+.TH WDDEL 1  "28 January 1992" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/wdreg.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/6.jutil/wdreg.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/wdreg.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH WDREG \  "28 January 1992" 
-+.TH WDREG 1  "28 January 1992" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/wnntouch.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/6.jutil/wnntouch.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/6.jutil/wnntouch.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH WNNTOUCH \  "28 January 1992" 
-+.TH WNNTOUCH 1  "28 January 1992" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/catod.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/6.jutil/catod.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/catod.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH CATOD \  "13 May 1992"
-+.TH CATOD 1  "13 May 1992"
+-.TH ATOD \  "30 April 2001" 
++.TH ATOD 1  "30 April 2001" 
  .SH NAME
- catod \- To convert the text format of a dictionary to binary 
-         format.
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/catof.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/6.jutil/catof.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/catof.man	2010-03-27 16:27:17.000000000 +0900
+ .sv 1
+ .nf
+diff --git a/Wnn/man.en/6.jutil/atof.man b/Wnn/man.en/6.jutil/atof.man
+index 2a75a72..67610a1 100644
+--- a/Wnn/man.en/6.jutil/atof.man
++++ b/Wnn/man.en/6.jutil/atof.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  .\"
--.TH CATOF \  "13 May 1992"
-+.TH CATOF 1  "13 May 1992"
+-.TH ATOF \  "30 April 2001" 
++.TH ATOF 1  "30 April 2001" 
  .SH NAME
- catof \- To convert the text format of grammatical rules into 
-         binary format.
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/cdtoa.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/6.jutil/cdtoa.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/cdtoa.man	2010-03-27 16:27:17.000000000 +0900
+ .sv 1
+ .nf 
+diff --git a/Wnn/man.en/6.jutil/dtoa.man b/Wnn/man.en/6.jutil/dtoa.man
+index 841ff39..83902ac 100644
+--- a/Wnn/man.en/6.jutil/dtoa.man
++++ b/Wnn/man.en/6.jutil/dtoa.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  .\"
--.TH CDTOA \  "13 May 1992"
-+.TH CDTOA 1  "13 May 1992"
+-.TH DTOA \  "30 April 2001" 
++.TH DTOA 1  "30 April 2001" 
  .SH NAME
- cdtoa \- To convert the binary format of a dictionary back to
-         text format.
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/cwddel.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/6.jutil/cwddel.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/cwddel.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH CWDDEL \  "13 May 1992"
-+.TH CWDDEL 1  "13 May 1992"
- .SH NAME
- cwddel \- To delete characters/words from the binary format 
-          dictionary.
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/cwdreg.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/6.jutil/cwdreg.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/cwdreg.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH CWDREG \  "13 May 1992"
-+.TH CWDREG 1  "13 May 1992"
- .SH NAME
- cwdreg \- To register characters/words into the binary format 
-          dictionary.
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/cwnntouch.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/6.jutil/cwnntouch.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/cwnntouch.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH CWNNTOUCH \  "13 May 1992"
-+.TH CWNNTOUCH 1  "13 May 1992"
- .SH NAME
- cwnntouch \- To rewrite the header of the dictionary.
- .SH SYNOPSIS
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/dic/pubdic.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/dic/pubdic.man	2001-06-15 03:08:31.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/dic/pubdic.man	2010-03-27 16:27:17.000000000 +0900
+ .sv 1
+ .nf
+diff --git a/Wnn/man/2.env/dic/pubdic.man b/Wnn/man/2.env/dic/pubdic.man
+index 3fb6820..c2ba1b3 100644
+--- a/Wnn/man/2.env/dic/pubdic.man
++++ b/Wnn/man/2.env/dic/pubdic.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -241,7 +220,7 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/dic/pubdic.man
  .SH 名称
  .sv 1
  .nf
-@@ -70,6 +70,6 @@
+@@ -70,6 +70,6 @@ JSERVER_DIR 
  .SH 関連項目
  .sv 1
  .nf
@@ -249,10 +228,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/dic/pubdic.man
 +uum(1), jserver(8), wnnenvrc(5), jserverrc(5), dtoa(1), atod(1).
  
  
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/dic/usr_dic.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/dic/usr_dic.man	2001-06-15 03:08:31.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/dic/usr_dic.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/dic/usr_dic.man b/Wnn/man/2.env/dic/usr_dic.man
+index 654e249..4d4d74a 100644
+--- a/Wnn/man/2.env/dic/usr_dic.man
++++ b/Wnn/man/2.env/dic/usr_dic.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -262,7 +241,7 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/dic/usr_dic.man
  .SH 名称
  .sv 1
  .nf
-@@ -50,6 +50,6 @@
+@@ -50,6 +50,6 @@ JSERVER_DIR 
  .SH 関連項目
  .sv 1
  .nf
@@ -270,10 +249,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/dic/usr_dic.man
 +uum(1), jserver(8), wnnenvrc(5), jserverrc(5), dtoa(1), atod(1).
  
  
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/2a_ctrl.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/2a_ctrl.man	2001-06-15 03:08:31.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/2a_ctrl.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/2a_ctrl.man b/Wnn/man/2.env/wnn/2a_ctrl.man
+index b374164..de18a64 100644
+--- a/Wnn/man/2.env/wnn/2a_ctrl.man
++++ b/Wnn/man/2.env/wnn/2a_ctrl.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -283,7 +262,7 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/2a_ctrl.man
  .SH 名称
  .sv 1
  .nf
-@@ -72,6 +72,6 @@
+@@ -72,6 +72,6 @@ PF1
  .SH 関連項目
  .sv 1
  .nf
@@ -291,10 +270,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/2a_ctrl.man
 +uum(1), mode(5), uumkey(5), cvt_key_tbl(5), オートマトン(3)
  
  
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/2b_romkan.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/2b_romkan.man	2010-01-05 01:59:40.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/2b_romkan.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/2b_romkan.man b/Wnn/man/2.env/wnn/2b_romkan.man
+index 6721a1f..0b2d7b2 100644
+--- a/Wnn/man/2.env/wnn/2b_romkan.man
++++ b/Wnn/man/2.env/wnn/2b_romkan.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -304,7 +283,7 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/2b_romkan.man
  .SH 名称
  .sv 1
  .nf
-@@ -179,6 +179,6 @@
+@@ -179,6 +179,6 @@ uum(1) 
  .SH 関連項目
  .sv 1
  .nf
@@ -312,10 +291,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/2b_romkan.man
 +uum(1), mode(5), オートマトン(3)
  
  
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/cvt_key.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/cvt_key.man	2001-06-15 03:08:31.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/cvt_key.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/cvt_key.man b/Wnn/man/2.env/wnn/cvt_key.man
+index 6306a71..d5e6742 100644
+--- a/Wnn/man/2.env/wnn/cvt_key.man
++++ b/Wnn/man/2.env/wnn/cvt_key.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -325,7 +304,7 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/cvt_key.man
  .SH 名称
  .sv 1
  .nf
-@@ -112,6 +112,6 @@
+@@ -112,6 +112,6 @@ terminfo 
  .SH 関連項目
  .sv 1
  .nf
@@ -333,10 +312,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/cvt_key.man
 +uum(1), 2A_CTRL(5), uumkey(5)
  
  
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/fzk.data.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/fzk.data.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/fzk.data.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/fzk.data.man b/Wnn/man/2.env/wnn/fzk.data.man
+index bd39f01..a6cd2be 100644
+--- a/Wnn/man/2.env/wnn/fzk.data.man
++++ b/Wnn/man/2.env/wnn/fzk.data.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -346,10 +325,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/fzk.data.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/fzk.u.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/fzk.u.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/fzk.u.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/fzk.u.man b/Wnn/man/2.env/wnn/fzk.u.man
+index 4567f0d..85cafeb 100644
+--- a/Wnn/man/2.env/wnn/fzk.u.man
++++ b/Wnn/man/2.env/wnn/fzk.u.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -359,10 +338,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/fzk.u.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/hinsi_dat.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/hinsi_dat.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/hinsi_dat.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/hinsi_dat.man b/Wnn/man/2.env/wnn/hinsi_dat.man
+index b3a0bc4..fe549e3 100644
+--- a/Wnn/man/2.env/wnn/hinsi_dat.man
++++ b/Wnn/man/2.env/wnn/hinsi_dat.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -372,10 +351,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/hinsi_dat.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/jserverrc.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/jserverrc.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/jserverrc.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/jserverrc.man b/Wnn/man/2.env/wnn/jserverrc.man
+index b1b7cc0..6038580 100644
+--- a/Wnn/man/2.env/wnn/jserverrc.man
++++ b/Wnn/man/2.env/wnn/jserverrc.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -385,10 +364,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/jserverrc.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/mode.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/mode.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/mode.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/mode.man b/Wnn/man/2.env/wnn/mode.man
+index ae91525..2a6164c 100644
+--- a/Wnn/man/2.env/wnn/mode.man
++++ b/Wnn/man/2.env/wnn/mode.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -398,7 +377,7 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/mode.man
  .SH 名称
  .sv 1
  .nf
-@@ -60,6 +60,6 @@
+@@ -60,6 +60,6 @@ uum 
  .SH 関連項目
  .sv 1
  .nf
@@ -406,10 +385,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/mode.man
 +uum(1), uumrc(5), オートマトン(3)
  
  
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/serverdef.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/serverdef.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/serverdef.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/serverdef.man b/Wnn/man/2.env/wnn/serverdef.man
+index 815a76c..cb113b4 100644
+--- a/Wnn/man/2.env/wnn/serverdef.man
++++ b/Wnn/man/2.env/wnn/serverdef.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -419,7 +398,7 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/serverdef.man
  .SH 名称
  .sv 1
  .nf
-@@ -81,6 +81,6 @@
+@@ -81,6 +81,6 @@ inet domain 
  .SH 関連項目
  .sv 1
  .nf
@@ -427,10 +406,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/serverdef.man
 +uum(1), jserver(8)
  
  
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/ujis_dic.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/ujis_dic.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/ujis_dic.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/ujis_dic.man b/Wnn/man/2.env/wnn/ujis_dic.man
+index 758f6cf..bf53449 100644
+--- a/Wnn/man/2.env/wnn/ujis_dic.man
++++ b/Wnn/man/2.env/wnn/ujis_dic.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -440,10 +419,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/ujis_dic.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/uumkey.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/uumkey.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/uumkey.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/uumkey.man b/Wnn/man/2.env/wnn/uumkey.man
+index ad1c838..19fe6d7 100644
+--- a/Wnn/man/2.env/wnn/uumkey.man
++++ b/Wnn/man/2.env/wnn/uumkey.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -453,16 +432,16 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/uumkey.man
  .SH 名称
  .sv 1
  .nf
-@@ -374,4 +374,4 @@
+@@ -374,4 +374,4 @@ henkan_on 
  .SH 関連項目
  .sv 1
  .nf
 -uum(1), uumrc(4), cvt_key_tbl(4), オートマトン(3)
 +uum(1), uumrc(5), cvt_key_tbl(5), オートマトン(3)
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/uumrc.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/uumrc.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/uumrc.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/uumrc.man b/Wnn/man/2.env/wnn/uumrc.man
+index b48d0e2..29a4824 100644
+--- a/Wnn/man/2.env/wnn/uumrc.man
++++ b/Wnn/man/2.env/wnn/uumrc.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -472,7 +451,7 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/uumrc.man
  .SH 名称
  .sv 1
  .nf
-@@ -218,8 +218,8 @@
+@@ -218,8 +218,8 @@ uum 
  .SH 関連項目
  .sv 1
  .nf
@@ -483,10 +462,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/uumrc.man
  
  
  
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/wnnenvrc.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/2.env/wnn/wnnenvrc.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/wnnenvrc.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/2.env/wnn/wnnenvrc.man b/Wnn/man/2.env/wnn/wnnenvrc.man
+index aec061c..8e3fad1 100644
+--- a/Wnn/man/2.env/wnn/wnnenvrc.man
++++ b/Wnn/man/2.env/wnn/wnnenvrc.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -496,7 +475,7 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/wnnenvrc.man
  .SH 名称
  .sv 1
  .nf
-@@ -141,6 +141,6 @@
+@@ -141,6 +141,6 @@ jserver 
  .SH 関連項目
  .sv 1
  .nf
@@ -504,10 +483,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/2.env/wnn/wnnenvrc.man
 +uum(1), jserver(8), uumrc(5), SYS_DIC(5), USR_DIC(5)
  
  
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/bun_suu.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/bun_suu.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/bun_suu.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/bun_suu.man b/Wnn/man/3.libwnn/jl_lib/bun_suu.man
+index 5175400..1c1b5fd 100644
+--- a/Wnn/man/3.libwnn/jl_lib/bun_suu.man
++++ b/Wnn/man/3.libwnn/jl_lib/bun_suu.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -517,374 +496,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/bun_suu.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/close.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/close.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/close.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_CLOSE \  "19 September 1991"
-+.TH JL_CLOSE 3  "19 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/connect.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/connect.man	2001-09-16 23:20:17.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/connect.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_CONNECT \  "19 September 1991"
-+.TH JL_CONNECT 3  "19 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/connect_lang.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/connect_lang.man	2001-09-16 23:22:05.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/connect_lang.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_CONNECT_LANG \  "19 September 1991"
-+.TH JL_CONNECT_LANG 3  "19 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dai_top.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/dai_top.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dai_top.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_DAI_TOP \  "19 September 1991"
-+.TH JL_DAI_TOP 3  "19 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_del.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/dic_del.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_del.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_DIC_DELETE \  "30 September 1991"
-+.TH JL_DIC_DELETE 3  "30 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_list.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/dic_list.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_list.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_DIC_LIST \  "19 September 1991" 
-+.TH JL_DIC_LIST 3  "19 September 1991" 
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_use.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/dic_use.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_use.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_DIC_USE \  "19 September 1991"
-+.TH JL_DIC_USE 3  "19 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/disconn.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/disconn.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/disconn.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_DISCONNECT \  "19 September 1991"
-+.TH JL_DISCONNECT 3  "19 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/env.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/env.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/env.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_ENV \  "19 September 1991"
-+.TH JL_ENV 3  "19 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/env_set.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/env_set.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/env_set.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_ENV_SET \  "20 September 1991"
-+.TH JL_ENV_SET 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/inspect.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/inspect.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/inspect.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_INSPECT \  "20 September 1991"
-+.TH JL_INSPECT 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/isconnect.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/isconnect.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/isconnect.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_ISCONNECT \  "20 September 1991"
-+.TH JL_ISCONNECT 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/jiri_len.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/jiri_len.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/jiri_len.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_JIRI_LEN \  "20 September 1991"
-+.TH JL_JIRI_LEN 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/kanji_len.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/kanji_len.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/kanji_len.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_KANJI_LEN \  "20 September 1991"
-+.TH JL_KANJI_LEN 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/kill.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/kill.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/kill.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_KILL \  "20 September 1991"
-+.TH JL_KILL 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/next.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/next.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/next.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_NEXT \  "30 September 1991"
-+.TH JL_NEXT 3  "30 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/nobi_conv.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/nobi_conv.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/nobi_conv.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_NOBI_CONV \  "20 September 1991"
-+.TH JL_NOBI_CONV 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/open.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/open.man	2001-09-16 23:20:17.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/open.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_OPEN \  "20 September 1991"
-+.TH JL_OPEN 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/open_lang.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/open_lang.man	2001-09-16 23:20:17.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/open_lang.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_OPEN_LANG \  "20 September 1991"
-+.TH JL_OPEN_LANG 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/param_get.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/param_get.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/param_get.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_PARAM_GET \  "30 September 1991"
-+.TH JL_PARAM_GET 3  "30 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/set_env_w.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/set_env_w.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/set_env_w.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_SET_ENV_WNNRC \  "20 September 1991"
-+.TH JL_SET_ENV_WNNRC 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/set_jikou.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/set_jikou.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/set_jikou.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_SET_JIKOUHO \  "30 September 1991"
-+.TH JL_SET_JIKOUHO 3  "30 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_del.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/word_del.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_del.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_WORD_DELETE \  "30 September 1991"
-+.TH JL_WORD_DELETE 3  "30 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_use.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/word_use.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_use.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_WORD_USE \  "20 September 1991"
-+.TH JL_WORD_USE 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/zenko.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_ZENKOUHO \  "20 September 1991"
-+.TH JL_ZENKOUHO 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko_bun.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/zenko_bun.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko_bun.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_ZENKOUHO_BUN \  "20 September 1991"
-+.TH JL_ZENKOUHO_BUN 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko_dap.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/zenko_dap.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko_dap.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_ZENKOUHO_DAIP \  "20 September 1991"
-+.TH JL_ZENKOUHO_DAIP 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko_suu.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/zenko_suu.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko_suu.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH JL_ZENKOUHO_SUU \  "20 September 1991"
-+.TH JL_ZENKOUHO_SUU 3  "20 September 1991"
- .SH 名称
- .sv 1
- .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/c_zenko.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/c_zenko.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/c_zenko.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/c_zenko.man b/Wnn/man/3.libwnn/jl_lib/c_zenko.man
+index 03df447..168773e 100644
+--- a/Wnn/man/3.libwnn/jl_lib/c_zenko.man
++++ b/Wnn/man/3.libwnn/jl_lib/c_zenko.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -894,10 +509,62 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/c_zenko.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_add.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/dic_add.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_add.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/close.man b/Wnn/man/3.libwnn/jl_lib/close.man
+index 8fac17e..1357fde 100644
+--- a/Wnn/man/3.libwnn/jl_lib/close.man
++++ b/Wnn/man/3.libwnn/jl_lib/close.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_CLOSE \  "19 September 1991"
++.TH JL_CLOSE 3  "19 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/connect.man b/Wnn/man/3.libwnn/jl_lib/connect.man
+index e012af1..ea731c7 100644
+--- a/Wnn/man/3.libwnn/jl_lib/connect.man
++++ b/Wnn/man/3.libwnn/jl_lib/connect.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_CONNECT \  "19 September 1991"
++.TH JL_CONNECT 3  "19 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/connect_lang.man b/Wnn/man/3.libwnn/jl_lib/connect_lang.man
+index 1a4d15c..08d904a 100644
+--- a/Wnn/man/3.libwnn/jl_lib/connect_lang.man
++++ b/Wnn/man/3.libwnn/jl_lib/connect_lang.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_CONNECT_LANG \  "19 September 1991"
++.TH JL_CONNECT_LANG 3  "19 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/dai_top.man b/Wnn/man/3.libwnn/jl_lib/dai_top.man
+index b646bb1..345a94b 100644
+--- a/Wnn/man/3.libwnn/jl_lib/dai_top.man
++++ b/Wnn/man/3.libwnn/jl_lib/dai_top.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_DAI_TOP \  "19 September 1991"
++.TH JL_DAI_TOP 3  "19 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/dic_add.man b/Wnn/man/3.libwnn/jl_lib/dic_add.man
+index 39fb8a6..960df9b 100644
+--- a/Wnn/man/3.libwnn/jl_lib/dic_add.man
++++ b/Wnn/man/3.libwnn/jl_lib/dic_add.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -907,10 +574,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_add.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_com_s.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/dic_com_s.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_com_s.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/dic_com_s.man b/Wnn/man/3.libwnn/jl_lib/dic_com_s.man
+index 5331f21..52aed02 100644
+--- a/Wnn/man/3.libwnn/jl_lib/dic_com_s.man
++++ b/Wnn/man/3.libwnn/jl_lib/dic_com_s.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -920,10 +587,36 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_com_s.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_save.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/dic_save.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_save.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/dic_del.man b/Wnn/man/3.libwnn/jl_lib/dic_del.man
+index 2a8843a..b1d3cf8 100644
+--- a/Wnn/man/3.libwnn/jl_lib/dic_del.man
++++ b/Wnn/man/3.libwnn/jl_lib/dic_del.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_DIC_DELETE \  "30 September 1991"
++.TH JL_DIC_DELETE 3  "30 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/dic_list.man b/Wnn/man/3.libwnn/jl_lib/dic_list.man
+index 97a0278..19b285d 100644
+--- a/Wnn/man/3.libwnn/jl_lib/dic_list.man
++++ b/Wnn/man/3.libwnn/jl_lib/dic_list.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_DIC_LIST \  "19 September 1991" 
++.TH JL_DIC_LIST 3  "19 September 1991" 
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/dic_save.man b/Wnn/man/3.libwnn/jl_lib/dic_save.man
+index 8fa6d36..2328506 100644
+--- a/Wnn/man/3.libwnn/jl_lib/dic_save.man
++++ b/Wnn/man/3.libwnn/jl_lib/dic_save.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -933,10 +626,62 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/dic_save.man
  .SH 名称
  .sv 1
  .fi
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/env_stick.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/env_stick.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/env_stick.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/dic_use.man b/Wnn/man/3.libwnn/jl_lib/dic_use.man
+index 5091720..449b0ec 100644
+--- a/Wnn/man/3.libwnn/jl_lib/dic_use.man
++++ b/Wnn/man/3.libwnn/jl_lib/dic_use.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_DIC_USE \  "19 September 1991"
++.TH JL_DIC_USE 3  "19 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/disconn.man b/Wnn/man/3.libwnn/jl_lib/disconn.man
+index 43dbabf..6787494 100644
+--- a/Wnn/man/3.libwnn/jl_lib/disconn.man
++++ b/Wnn/man/3.libwnn/jl_lib/disconn.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_DISCONNECT \  "19 September 1991"
++.TH JL_DISCONNECT 3  "19 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/env.man b/Wnn/man/3.libwnn/jl_lib/env.man
+index 3209cdf..a457a5e 100644
+--- a/Wnn/man/3.libwnn/jl_lib/env.man
++++ b/Wnn/man/3.libwnn/jl_lib/env.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_ENV \  "19 September 1991"
++.TH JL_ENV 3  "19 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/env_set.man b/Wnn/man/3.libwnn/jl_lib/env_set.man
+index 478a4db..840a9e8 100644
+--- a/Wnn/man/3.libwnn/jl_lib/env_set.man
++++ b/Wnn/man/3.libwnn/jl_lib/env_set.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_ENV_SET \  "20 September 1991"
++.TH JL_ENV_SET 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/env_stick.man b/Wnn/man/3.libwnn/jl_lib/env_stick.man
+index 2858e26..4bfe74e 100644
+--- a/Wnn/man/3.libwnn/jl_lib/env_stick.man
++++ b/Wnn/man/3.libwnn/jl_lib/env_stick.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -946,10 +691,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/env_stick.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/fuz_get.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/fuz_get.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/fuz_get.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/fuz_get.man b/Wnn/man/3.libwnn/jl_lib/fuz_get.man
+index 71143ce..68243dc 100644
+--- a/Wnn/man/3.libwnn/jl_lib/fuz_get.man
++++ b/Wnn/man/3.libwnn/jl_lib/fuz_get.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -959,10 +704,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/fuz_get.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/fuz_set.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/fuz_set.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/fuz_set.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/fuz_set.man b/Wnn/man/3.libwnn/jl_lib/fuz_set.man
+index f557ef4..0031468 100644
+--- a/Wnn/man/3.libwnn/jl_lib/fuz_set.man
++++ b/Wnn/man/3.libwnn/jl_lib/fuz_set.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -972,10 +717,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/fuz_set.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/get_kanji.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/get_kanji.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/get_kanji.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/get_kanji.man b/Wnn/man/3.libwnn/jl_lib/get_kanji.man
+index 8ddef43..a4a18e3 100644
+--- a/Wnn/man/3.libwnn/jl_lib/get_kanji.man
++++ b/Wnn/man/3.libwnn/jl_lib/get_kanji.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -985,10 +730,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/get_kanji.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/get_zen_k.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/get_zen_k.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/get_zen_k.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/get_zen_k.man b/Wnn/man/3.libwnn/jl_lib/get_zen_k.man
+index 398c68a..f087218 100644
+--- a/Wnn/man/3.libwnn/jl_lib/get_zen_k.man
++++ b/Wnn/man/3.libwnn/jl_lib/get_zen_k.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -998,10 +743,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/get_zen_k.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_dct.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/hinsi_dct.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_dct.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/hinsi_dct.man b/Wnn/man/3.libwnn/jl_lib/hinsi_dct.man
+index 51a0140..a03f58c 100644
+--- a/Wnn/man/3.libwnn/jl_lib/hinsi_dct.man
++++ b/Wnn/man/3.libwnn/jl_lib/hinsi_dct.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1011,10 +756,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_dct.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_lst.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/hinsi_lst.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_lst.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/hinsi_lst.man b/Wnn/man/3.libwnn/jl_lib/hinsi_lst.man
+index 27c8afc..e1a8cc9 100644
+--- a/Wnn/man/3.libwnn/jl_lib/hinsi_lst.man
++++ b/Wnn/man/3.libwnn/jl_lib/hinsi_lst.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1024,10 +769,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_lst.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_nm.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/hinsi_nm.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_nm.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/hinsi_nm.man b/Wnn/man/3.libwnn/jl_lib/hinsi_nm.man
+index a9be8ee..5caf835 100644
+--- a/Wnn/man/3.libwnn/jl_lib/hinsi_nm.man
++++ b/Wnn/man/3.libwnn/jl_lib/hinsi_nm.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1037,10 +782,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_nm.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_num.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/hinsi_num.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_num.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/hinsi_num.man b/Wnn/man/3.libwnn/jl_lib/hinsi_num.man
+index ea4ca90..341dc5f 100644
+--- a/Wnn/man/3.libwnn/jl_lib/hinsi_num.man
++++ b/Wnn/man/3.libwnn/jl_lib/hinsi_num.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1050,10 +795,140 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/hinsi_num.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/ren_conv.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/ren_conv.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/ren_conv.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/inspect.man b/Wnn/man/3.libwnn/jl_lib/inspect.man
+index 676a342..29e3592 100644
+--- a/Wnn/man/3.libwnn/jl_lib/inspect.man
++++ b/Wnn/man/3.libwnn/jl_lib/inspect.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_INSPECT \  "20 September 1991"
++.TH JL_INSPECT 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/isconnect.man b/Wnn/man/3.libwnn/jl_lib/isconnect.man
+index 6bbece1..887b65f 100644
+--- a/Wnn/man/3.libwnn/jl_lib/isconnect.man
++++ b/Wnn/man/3.libwnn/jl_lib/isconnect.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_ISCONNECT \  "20 September 1991"
++.TH JL_ISCONNECT 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/jiri_len.man b/Wnn/man/3.libwnn/jl_lib/jiri_len.man
+index 076a067..580db81 100644
+--- a/Wnn/man/3.libwnn/jl_lib/jiri_len.man
++++ b/Wnn/man/3.libwnn/jl_lib/jiri_len.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_JIRI_LEN \  "20 September 1991"
++.TH JL_JIRI_LEN 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/kanji_len.man b/Wnn/man/3.libwnn/jl_lib/kanji_len.man
+index 95626f5..a6bd3a0 100644
+--- a/Wnn/man/3.libwnn/jl_lib/kanji_len.man
++++ b/Wnn/man/3.libwnn/jl_lib/kanji_len.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_KANJI_LEN \  "20 September 1991"
++.TH JL_KANJI_LEN 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/kill.man b/Wnn/man/3.libwnn/jl_lib/kill.man
+index c5f6e2e..0033c5a 100644
+--- a/Wnn/man/3.libwnn/jl_lib/kill.man
++++ b/Wnn/man/3.libwnn/jl_lib/kill.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_KILL \  "20 September 1991"
++.TH JL_KILL 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/next.man b/Wnn/man/3.libwnn/jl_lib/next.man
+index 3f4512c..f68515b 100644
+--- a/Wnn/man/3.libwnn/jl_lib/next.man
++++ b/Wnn/man/3.libwnn/jl_lib/next.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_NEXT \  "30 September 1991"
++.TH JL_NEXT 3  "30 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/nobi_conv.man b/Wnn/man/3.libwnn/jl_lib/nobi_conv.man
+index 47365c3..cccb142 100644
+--- a/Wnn/man/3.libwnn/jl_lib/nobi_conv.man
++++ b/Wnn/man/3.libwnn/jl_lib/nobi_conv.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_NOBI_CONV \  "20 September 1991"
++.TH JL_NOBI_CONV 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/open.man b/Wnn/man/3.libwnn/jl_lib/open.man
+index 6f299b4..370d1ed 100644
+--- a/Wnn/man/3.libwnn/jl_lib/open.man
++++ b/Wnn/man/3.libwnn/jl_lib/open.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_OPEN \  "20 September 1991"
++.TH JL_OPEN 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/open_lang.man b/Wnn/man/3.libwnn/jl_lib/open_lang.man
+index eeae8c9..f3e934e 100644
+--- a/Wnn/man/3.libwnn/jl_lib/open_lang.man
++++ b/Wnn/man/3.libwnn/jl_lib/open_lang.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_OPEN_LANG \  "20 September 1991"
++.TH JL_OPEN_LANG 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/param_get.man b/Wnn/man/3.libwnn/jl_lib/param_get.man
+index 0eb7279..f8d9ac1 100644
+--- a/Wnn/man/3.libwnn/jl_lib/param_get.man
++++ b/Wnn/man/3.libwnn/jl_lib/param_get.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_PARAM_GET \  "30 September 1991"
++.TH JL_PARAM_GET 3  "30 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/ren_conv.man b/Wnn/man/3.libwnn/jl_lib/ren_conv.man
+index 9516b2d..218da5f 100644
+--- a/Wnn/man/3.libwnn/jl_lib/ren_conv.man
++++ b/Wnn/man/3.libwnn/jl_lib/ren_conv.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1063,10 +938,36 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/ren_conv.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/tan_conv.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/tan_conv.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/tan_conv.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/set_env_w.man b/Wnn/man/3.libwnn/jl_lib/set_env_w.man
+index 75435c4..2d58ac3 100644
+--- a/Wnn/man/3.libwnn/jl_lib/set_env_w.man
++++ b/Wnn/man/3.libwnn/jl_lib/set_env_w.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_SET_ENV_WNNRC \  "20 September 1991"
++.TH JL_SET_ENV_WNNRC 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/set_jikou.man b/Wnn/man/3.libwnn/jl_lib/set_jikou.man
+index 558f814..0575fcb 100644
+--- a/Wnn/man/3.libwnn/jl_lib/set_jikou.man
++++ b/Wnn/man/3.libwnn/jl_lib/set_jikou.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_SET_JIKOUHO \  "30 September 1991"
++.TH JL_SET_JIKOUHO 3  "30 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/tan_conv.man b/Wnn/man/3.libwnn/jl_lib/tan_conv.man
+index 67dd163..cd208ba 100644
+--- a/Wnn/man/3.libwnn/jl_lib/tan_conv.man
++++ b/Wnn/man/3.libwnn/jl_lib/tan_conv.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1076,10 +977,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/tan_conv.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/update_hd.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/update_hd.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/update_hd.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/update_hd.man b/Wnn/man/3.libwnn/jl_lib/update_hd.man
+index 28edbc5..609bce8 100644
+--- a/Wnn/man/3.libwnn/jl_lib/update_hd.man
++++ b/Wnn/man/3.libwnn/jl_lib/update_hd.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1089,10 +990,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/update_hd.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_add.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/word_add.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_add.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/word_add.man b/Wnn/man/3.libwnn/jl_lib/word_add.man
+index 8f02daa..f856f43 100644
+--- a/Wnn/man/3.libwnn/jl_lib/word_add.man
++++ b/Wnn/man/3.libwnn/jl_lib/word_add.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1102,10 +1003,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_add.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_cm_s.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/word_cm_s.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_cm_s.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/word_cm_s.man b/Wnn/man/3.libwnn/jl_lib/word_cm_s.man
+index 269ffa3..45e4818 100644
+--- a/Wnn/man/3.libwnn/jl_lib/word_cm_s.man
++++ b/Wnn/man/3.libwnn/jl_lib/word_cm_s.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1115,10 +1016,23 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_cm_s.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_info.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/word_info.man	2001-06-15 03:08:32.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_info.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/word_del.man b/Wnn/man/3.libwnn/jl_lib/word_del.man
+index db0f4fc..7059997 100644
+--- a/Wnn/man/3.libwnn/jl_lib/word_del.man
++++ b/Wnn/man/3.libwnn/jl_lib/word_del.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_WORD_DELETE \  "30 September 1991"
++.TH JL_WORD_DELETE 3  "30 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/word_info.man b/Wnn/man/3.libwnn/jl_lib/word_info.man
+index c813495..46d4cc9 100644
+--- a/Wnn/man/3.libwnn/jl_lib/word_info.man
++++ b/Wnn/man/3.libwnn/jl_lib/word_info.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1128,10 +1042,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_info.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_srch.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/word_srch.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_srch.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/word_srch.man b/Wnn/man/3.libwnn/jl_lib/word_srch.man
+index 454036b..594189a 100644
+--- a/Wnn/man/3.libwnn/jl_lib/word_srch.man
++++ b/Wnn/man/3.libwnn/jl_lib/word_srch.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1141,10 +1055,49 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/word_srch.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko_da.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/jl_lib/zenko_da.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko_da.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/word_use.man b/Wnn/man/3.libwnn/jl_lib/word_use.man
+index 2b6d989..d722e5b 100644
+--- a/Wnn/man/3.libwnn/jl_lib/word_use.man
++++ b/Wnn/man/3.libwnn/jl_lib/word_use.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_WORD_USE \  "20 September 1991"
++.TH JL_WORD_USE 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/zenko.man b/Wnn/man/3.libwnn/jl_lib/zenko.man
+index 59e5fc3..7b530d0 100644
+--- a/Wnn/man/3.libwnn/jl_lib/zenko.man
++++ b/Wnn/man/3.libwnn/jl_lib/zenko.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_ZENKOUHO \  "20 September 1991"
++.TH JL_ZENKOUHO 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/zenko_bun.man b/Wnn/man/3.libwnn/jl_lib/zenko_bun.man
+index 4e1cb7f..45411f0 100644
+--- a/Wnn/man/3.libwnn/jl_lib/zenko_bun.man
++++ b/Wnn/man/3.libwnn/jl_lib/zenko_bun.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_ZENKOUHO_BUN \  "20 September 1991"
++.TH JL_ZENKOUHO_BUN 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/zenko_da.man b/Wnn/man/3.libwnn/jl_lib/zenko_da.man
+index 3f9ddc7..5d2c8f6 100644
+--- a/Wnn/man/3.libwnn/jl_lib/zenko_da.man
++++ b/Wnn/man/3.libwnn/jl_lib/zenko_da.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1154,10 +1107,36 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/jl_lib/zenko_da.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/access.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/access.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/access.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/jl_lib/zenko_dap.man b/Wnn/man/3.libwnn/jl_lib/zenko_dap.man
+index 4054766..c0833df 100644
+--- a/Wnn/man/3.libwnn/jl_lib/zenko_dap.man
++++ b/Wnn/man/3.libwnn/jl_lib/zenko_dap.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_ZENKOUHO_DAIP \  "20 September 1991"
++.TH JL_ZENKOUHO_DAIP 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/jl_lib/zenko_suu.man b/Wnn/man/3.libwnn/jl_lib/zenko_suu.man
+index 38abd21..06eb0aa 100644
+--- a/Wnn/man/3.libwnn/jl_lib/zenko_suu.man
++++ b/Wnn/man/3.libwnn/jl_lib/zenko_suu.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH JL_ZENKOUHO_SUU \  "20 September 1991"
++.TH JL_ZENKOUHO_SUU 3  "20 September 1991"
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/3.libwnn/js_lib/access.man b/Wnn/man/3.libwnn/js_lib/access.man
+index 7690a05..1326ab1 100644
+--- a/Wnn/man/3.libwnn/js_lib/access.man
++++ b/Wnn/man/3.libwnn/js_lib/access.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1167,10 +1146,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/access.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/close.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/close.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/close.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/close.man b/Wnn/man/3.libwnn/js_lib/close.man
+index 1cdc3d5..eba511b 100644
+--- a/Wnn/man/3.libwnn/js_lib/close.man
++++ b/Wnn/man/3.libwnn/js_lib/close.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1180,10 +1159,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/close.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/connect.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/connect.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/connect.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/connect.man b/Wnn/man/3.libwnn/js_lib/connect.man
+index 8c472cd..c3812d6 100644
+--- a/Wnn/man/3.libwnn/js_lib/connect.man
++++ b/Wnn/man/3.libwnn/js_lib/connect.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1193,10 +1172,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/connect.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_add.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/dic_add.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_add.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/dic_add.man b/Wnn/man/3.libwnn/js_lib/dic_add.man
+index 88c840b..2258999 100644
+--- a/Wnn/man/3.libwnn/js_lib/dic_add.man
++++ b/Wnn/man/3.libwnn/js_lib/dic_add.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1206,10 +1185,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_add.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_cr.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/dic_cr.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_cr.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/dic_cr.man b/Wnn/man/3.libwnn/js_lib/dic_cr.man
+index 980d622..9d4eda2 100644
+--- a/Wnn/man/3.libwnn/js_lib/dic_cr.man
++++ b/Wnn/man/3.libwnn/js_lib/dic_cr.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1219,10 +1198,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_cr.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_cr_cl.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/dic_cr_cl.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_cr_cl.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/dic_cr_cl.man b/Wnn/man/3.libwnn/js_lib/dic_cr_cl.man
+index 8045929..b04c33c 100644
+--- a/Wnn/man/3.libwnn/js_lib/dic_cr_cl.man
++++ b/Wnn/man/3.libwnn/js_lib/dic_cr_cl.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1232,10 +1211,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_cr_cl.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_del.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/dic_del.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_del.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/dic_del.man b/Wnn/man/3.libwnn/js_lib/dic_del.man
+index 2ff931a..5783cee 100644
+--- a/Wnn/man/3.libwnn/js_lib/dic_del.man
++++ b/Wnn/man/3.libwnn/js_lib/dic_del.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1245,10 +1224,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_del.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_info.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/dic_info.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_info.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/dic_info.man b/Wnn/man/3.libwnn/js_lib/dic_info.man
+index 16a6910..13e22b3 100644
+--- a/Wnn/man/3.libwnn/js_lib/dic_info.man
++++ b/Wnn/man/3.libwnn/js_lib/dic_info.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1258,10 +1237,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_info.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_lst.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/dic_lst.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_lst.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/dic_lst.man b/Wnn/man/3.libwnn/js_lib/dic_lst.man
+index 9ffc20f..5e55783 100644
+--- a/Wnn/man/3.libwnn/js_lib/dic_lst.man
++++ b/Wnn/man/3.libwnn/js_lib/dic_lst.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1271,10 +1250,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_lst.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_lst_a.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/dic_lst_a.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_lst_a.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/dic_lst_a.man b/Wnn/man/3.libwnn/js_lib/dic_lst_a.man
+index 8b04598..3b964ea 100644
+--- a/Wnn/man/3.libwnn/js_lib/dic_lst_a.man
++++ b/Wnn/man/3.libwnn/js_lib/dic_lst_a.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1284,10 +1263,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_lst_a.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_use.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/dic_use.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_use.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/dic_use.man b/Wnn/man/3.libwnn/js_lib/dic_use.man
+index 90714eb..cb2f2ea 100644
+--- a/Wnn/man/3.libwnn/js_lib/dic_use.man
++++ b/Wnn/man/3.libwnn/js_lib/dic_use.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1297,10 +1276,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/dic_use.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/disconn.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/disconn.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/disconn.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/disconn.man b/Wnn/man/3.libwnn/js_lib/disconn.man
+index fde44b5..d127db1 100644
+--- a/Wnn/man/3.libwnn/js_lib/disconn.man
++++ b/Wnn/man/3.libwnn/js_lib/disconn.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1310,10 +1289,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/disconn.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/env_exist.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/env_exist.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/env_exist.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/env_exist.man b/Wnn/man/3.libwnn/js_lib/env_exist.man
+index e6a0686..1069f7c 100644
+--- a/Wnn/man/3.libwnn/js_lib/env_exist.man
++++ b/Wnn/man/3.libwnn/js_lib/env_exist.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1323,10 +1302,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/env_exist.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/env_list.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/env_list.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/env_list.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/env_list.man b/Wnn/man/3.libwnn/js_lib/env_list.man
+index cc4d623..61ec0df 100644
+--- a/Wnn/man/3.libwnn/js_lib/env_list.man
++++ b/Wnn/man/3.libwnn/js_lib/env_list.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1336,10 +1315,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/env_list.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/env_stick.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/env_stick.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/env_stick.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/env_stick.man b/Wnn/man/3.libwnn/js_lib/env_stick.man
+index 3300dbd..cc64d86 100644
+--- a/Wnn/man/3.libwnn/js_lib/env_stick.man
++++ b/Wnn/man/3.libwnn/js_lib/env_stick.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1349,10 +1328,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/env_stick.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_com_s.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_com_s.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_com_s.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_com_s.man b/Wnn/man/3.libwnn/js_lib/fl_com_s.man
+index e5c14b6..96e6789 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_com_s.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_com_s.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1362,10 +1341,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_com_s.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_disc.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_disc.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_disc.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_disc.man b/Wnn/man/3.libwnn/js_lib/fl_disc.man
+index e84666c..b813ccb 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_disc.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_disc.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1375,10 +1354,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_disc.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_info.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_info.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_info.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_info.man b/Wnn/man/3.libwnn/js_lib/fl_info.man
+index 7ee2019..43da894 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_info.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_info.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1388,10 +1367,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_info.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_list.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_list.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_list.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_list.man b/Wnn/man/3.libwnn/js_lib/fl_list.man
+index cdfdec2..b116d01 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_list.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_list.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1401,10 +1380,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_list.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_list_a.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_list_a.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_list_a.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_list_a.man b/Wnn/man/3.libwnn/js_lib/fl_list_a.man
+index 4ea40c3..8587d05 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_list_a.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_list_a.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1414,10 +1393,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_list_a.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_load.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_load.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_load.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_load.man b/Wnn/man/3.libwnn/js_lib/fl_load.man
+index 9f9bbbf..a9ef71d 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_load.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_load.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1427,10 +1406,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_load.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_load_l.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_load_l.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_load_l.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_load_l.man b/Wnn/man/3.libwnn/js_lib/fl_load_l.man
+index 700b5f1..fe111ed 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_load_l.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_load_l.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1440,10 +1419,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_load_l.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_pswd_s.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_pswd_s.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_pswd_s.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_pswd_s.man b/Wnn/man/3.libwnn/js_lib/fl_pswd_s.man
+index 09ec8d3..513eeac 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_pswd_s.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_pswd_s.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1453,10 +1432,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_pswd_s.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_read.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_read.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_read.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_read.man b/Wnn/man/3.libwnn/js_lib/fl_read.man
+index 1382a85..c0c9c91 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_read.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_read.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1466,10 +1445,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_read.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_recv.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_recv.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_recv.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_recv.man b/Wnn/man/3.libwnn/js_lib/fl_recv.man
+index 5816da4..72b2ede 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_recv.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_recv.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1479,10 +1458,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_recv.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_rm.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_rm.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_rm.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_rm.man b/Wnn/man/3.libwnn/js_lib/fl_rm.man
+index baa7943..ea15bc8 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_rm.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_rm.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1492,10 +1471,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_rm.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_rm_cl.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_rm_cl.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_rm_cl.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_rm_cl.man b/Wnn/man/3.libwnn/js_lib/fl_rm_cl.man
+index c7496a4..489d35b 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_rm_cl.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_rm_cl.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1505,10 +1484,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_rm_cl.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_snd.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_snd.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_snd.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_snd.man b/Wnn/man/3.libwnn/js_lib/fl_snd.man
+index 5e9255d..58cc815 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_snd.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_snd.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1518,10 +1497,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_snd.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_stat.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_stat.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_stat.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_stat.man b/Wnn/man/3.libwnn/js_lib/fl_stat.man
+index a9ed167..cc18afd 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_stat.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_stat.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1531,10 +1510,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_stat.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_wrt.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fl_wrt.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_wrt.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fl_wrt.man b/Wnn/man/3.libwnn/js_lib/fl_wrt.man
+index b0bfed3..c990add 100644
+--- a/Wnn/man/3.libwnn/js_lib/fl_wrt.man
++++ b/Wnn/man/3.libwnn/js_lib/fl_wrt.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1544,10 +1523,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fl_wrt.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fuz_get.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fuz_get.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fuz_get.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fuz_get.man b/Wnn/man/3.libwnn/js_lib/fuz_get.man
+index 6220c81..3d7992a 100644
+--- a/Wnn/man/3.libwnn/js_lib/fuz_get.man
++++ b/Wnn/man/3.libwnn/js_lib/fuz_get.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1557,10 +1536,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fuz_get.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fuz_set.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/fuz_set.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fuz_set.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/fuz_set.man b/Wnn/man/3.libwnn/js_lib/fuz_set.man
+index 54fdc79..93cd29f 100644
+--- a/Wnn/man/3.libwnn/js_lib/fuz_set.man
++++ b/Wnn/man/3.libwnn/js_lib/fuz_set.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1570,10 +1549,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/fuz_set.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hd_cr.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/hd_cr.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hd_cr.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/hd_cr.man b/Wnn/man/3.libwnn/js_lib/hd_cr.man
+index 89aa035..88c3151 100644
+--- a/Wnn/man/3.libwnn/js_lib/hd_cr.man
++++ b/Wnn/man/3.libwnn/js_lib/hd_cr.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1583,10 +1562,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hd_cr.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hd_cr_cl.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/hd_cr_cl.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hd_cr_cl.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/hd_cr_cl.man b/Wnn/man/3.libwnn/js_lib/hd_cr_cl.man
+index b66c119..f1ca262 100644
+--- a/Wnn/man/3.libwnn/js_lib/hd_cr_cl.man
++++ b/Wnn/man/3.libwnn/js_lib/hd_cr_cl.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1596,10 +1575,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hd_cr_cl.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hindo_set.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/hindo_set.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hindo_set.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/hindo_set.man b/Wnn/man/3.libwnn/js_lib/hindo_set.man
+index 605a22c..3464105 100644
+--- a/Wnn/man/3.libwnn/js_lib/hindo_set.man
++++ b/Wnn/man/3.libwnn/js_lib/hindo_set.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1609,10 +1588,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hindo_set.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_dct.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/hinsi_dct.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_dct.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/hinsi_dct.man b/Wnn/man/3.libwnn/js_lib/hinsi_dct.man
+index 64534ab..da173d5 100644
+--- a/Wnn/man/3.libwnn/js_lib/hinsi_dct.man
++++ b/Wnn/man/3.libwnn/js_lib/hinsi_dct.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1622,10 +1601,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_dct.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_lst.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/hinsi_lst.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_lst.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/hinsi_lst.man b/Wnn/man/3.libwnn/js_lib/hinsi_lst.man
+index 0c4ab68..7358ace 100644
+--- a/Wnn/man/3.libwnn/js_lib/hinsi_lst.man
++++ b/Wnn/man/3.libwnn/js_lib/hinsi_lst.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1635,10 +1614,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_lst.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_nm.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/hinsi_nm.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_nm.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/hinsi_nm.man b/Wnn/man/3.libwnn/js_lib/hinsi_nm.man
+index 57d6902..83f2f73 100644
+--- a/Wnn/man/3.libwnn/js_lib/hinsi_nm.man
++++ b/Wnn/man/3.libwnn/js_lib/hinsi_nm.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1648,10 +1627,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_nm.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_num.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/hinsi_num.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_num.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/hinsi_num.man b/Wnn/man/3.libwnn/js_lib/hinsi_num.man
+index 7773010..f6dd801 100644
+--- a/Wnn/man/3.libwnn/js_lib/hinsi_num.man
++++ b/Wnn/man/3.libwnn/js_lib/hinsi_num.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1661,10 +1640,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_num.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_t_s.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/hinsi_t_s.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_t_s.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/hinsi_t_s.man b/Wnn/man/3.libwnn/js_lib/hinsi_t_s.man
+index 6b9a28c..f4a702e 100644
+--- a/Wnn/man/3.libwnn/js_lib/hinsi_t_s.man
++++ b/Wnn/man/3.libwnn/js_lib/hinsi_t_s.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1674,10 +1653,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/hinsi_t_s.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/isconnect.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/isconnect.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/isconnect.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/isconnect.man b/Wnn/man/3.libwnn/js_lib/isconnect.man
+index 4b27fdc..2b1f809 100644
+--- a/Wnn/man/3.libwnn/js_lib/isconnect.man
++++ b/Wnn/man/3.libwnn/js_lib/isconnect.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1687,10 +1666,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/isconnect.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kanren.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/kanren.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kanren.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/kanren.man b/Wnn/man/3.libwnn/js_lib/kanren.man
+index 82ab6f5..ba7b8a5 100644
+--- a/Wnn/man/3.libwnn/js_lib/kanren.man
++++ b/Wnn/man/3.libwnn/js_lib/kanren.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1700,10 +1679,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kanren.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kantan_d.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/kantan_d.man	2001-06-15 03:08:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kantan_d.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/kantan_d.man b/Wnn/man/3.libwnn/js_lib/kantan_d.man
+index f29f270..0773825 100644
+--- a/Wnn/man/3.libwnn/js_lib/kantan_d.man
++++ b/Wnn/man/3.libwnn/js_lib/kantan_d.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1713,10 +1692,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kantan_d.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kantan_s.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/kantan_s.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kantan_s.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/kantan_s.man b/Wnn/man/3.libwnn/js_lib/kantan_s.man
+index ab1454a..3fbf329 100644
+--- a/Wnn/man/3.libwnn/js_lib/kantan_s.man
++++ b/Wnn/man/3.libwnn/js_lib/kantan_s.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1726,10 +1705,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kantan_s.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kanzen_d.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/kanzen_d.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kanzen_d.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/kanzen_d.man b/Wnn/man/3.libwnn/js_lib/kanzen_d.man
+index c621f90..0ef6ed6 100644
+--- a/Wnn/man/3.libwnn/js_lib/kanzen_d.man
++++ b/Wnn/man/3.libwnn/js_lib/kanzen_d.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1739,10 +1718,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kanzen_d.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kanzen_s.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/kanzen_s.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kanzen_s.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/kanzen_s.man b/Wnn/man/3.libwnn/js_lib/kanzen_s.man
+index efcef7f..0f6aa0f 100644
+--- a/Wnn/man/3.libwnn/js_lib/kanzen_s.man
++++ b/Wnn/man/3.libwnn/js_lib/kanzen_s.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1752,10 +1731,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kanzen_s.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kill.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/kill.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kill.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/kill.man b/Wnn/man/3.libwnn/js_lib/kill.man
+index cf15bd9..6c660d5 100644
+--- a/Wnn/man/3.libwnn/js_lib/kill.man
++++ b/Wnn/man/3.libwnn/js_lib/kill.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1765,10 +1744,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/kill.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/mkdir.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/mkdir.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/mkdir.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/mkdir.man b/Wnn/man/3.libwnn/js_lib/mkdir.man
+index 5b6d6f2..0d31e42 100644
+--- a/Wnn/man/3.libwnn/js_lib/mkdir.man
++++ b/Wnn/man/3.libwnn/js_lib/mkdir.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1778,10 +1757,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/mkdir.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/open.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/open.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/open.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/open.man b/Wnn/man/3.libwnn/js_lib/open.man
+index 23c076a..e3f0d9a 100644
+--- a/Wnn/man/3.libwnn/js_lib/open.man
++++ b/Wnn/man/3.libwnn/js_lib/open.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1791,10 +1770,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/open.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/open_lang.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/open_lang.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/open_lang.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/open_lang.man b/Wnn/man/3.libwnn/js_lib/open_lang.man
+index fb36f3b..e9d74eb 100644
+--- a/Wnn/man/3.libwnn/js_lib/open_lang.man
++++ b/Wnn/man/3.libwnn/js_lib/open_lang.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1804,10 +1783,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/open_lang.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/param_get.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/param_get.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/param_get.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/param_get.man b/Wnn/man/3.libwnn/js_lib/param_get.man
+index c22180a..63efc9f 100644
+--- a/Wnn/man/3.libwnn/js_lib/param_get.man
++++ b/Wnn/man/3.libwnn/js_lib/param_get.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1817,10 +1796,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/param_get.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/set_lang.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/set_lang.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/set_lang.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/set_lang.man b/Wnn/man/3.libwnn/js_lib/set_lang.man
+index e3172d6..afefc14 100644
+--- a/Wnn/man/3.libwnn/js_lib/set_lang.man
++++ b/Wnn/man/3.libwnn/js_lib/set_lang.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1830,10 +1809,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/set_lang.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/version.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/version.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/version.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/version.man b/Wnn/man/3.libwnn/js_lib/version.man
+index 854a413..2b08a6e 100644
+--- a/Wnn/man/3.libwnn/js_lib/version.man
++++ b/Wnn/man/3.libwnn/js_lib/version.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1843,10 +1822,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/version.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/who.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/who.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/who.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/who.man b/Wnn/man/3.libwnn/js_lib/who.man
+index 23fecf8..d307173 100644
+--- a/Wnn/man/3.libwnn/js_lib/who.man
++++ b/Wnn/man/3.libwnn/js_lib/who.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1856,10 +1835,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/who.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_add.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/word_add.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_add.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/word_add.man b/Wnn/man/3.libwnn/js_lib/word_add.man
+index fc4d8d6..febf051 100644
+--- a/Wnn/man/3.libwnn/js_lib/word_add.man
++++ b/Wnn/man/3.libwnn/js_lib/word_add.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1869,10 +1848,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_add.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_cm_s.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/word_cm_s.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_cm_s.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/word_cm_s.man b/Wnn/man/3.libwnn/js_lib/word_cm_s.man
+index 5134527..9f32b1f 100644
+--- a/Wnn/man/3.libwnn/js_lib/word_cm_s.man
++++ b/Wnn/man/3.libwnn/js_lib/word_cm_s.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1882,10 +1861,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_cm_s.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_del.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/word_del.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_del.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/word_del.man b/Wnn/man/3.libwnn/js_lib/word_del.man
+index 4864ab5..76c9f68 100644
+--- a/Wnn/man/3.libwnn/js_lib/word_del.man
++++ b/Wnn/man/3.libwnn/js_lib/word_del.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1895,10 +1874,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_del.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_info.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/word_info.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_info.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/word_info.man b/Wnn/man/3.libwnn/js_lib/word_info.man
+index b0330ff..383ec43 100644
+--- a/Wnn/man/3.libwnn/js_lib/word_info.man
++++ b/Wnn/man/3.libwnn/js_lib/word_info.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1908,10 +1887,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_info.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_srch.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/js_lib/word_srch.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_srch.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/js_lib/word_srch.man b/Wnn/man/3.libwnn/js_lib/word_srch.man
+index bb33f92..89b8b9c 100644
+--- a/Wnn/man/3.libwnn/js_lib/word_srch.man
++++ b/Wnn/man/3.libwnn/js_lib/word_srch.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1921,10 +1900,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/js_lib/word_srch.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/misc_lib/msg_cl.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/misc_lib/msg_cl.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/misc_lib/msg_cl.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/misc_lib/msg_cl.man b/Wnn/man/3.libwnn/misc_lib/msg_cl.man
+index 8124c67..bf9652f 100644
+--- a/Wnn/man/3.libwnn/misc_lib/msg_cl.man
++++ b/Wnn/man/3.libwnn/misc_lib/msg_cl.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1934,10 +1913,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/misc_lib/msg_cl.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/misc_lib/msg_get.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/misc_lib/msg_get.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/misc_lib/msg_get.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/misc_lib/msg_get.man b/Wnn/man/3.libwnn/misc_lib/msg_get.man
+index 882a8df..31923f8 100644
+--- a/Wnn/man/3.libwnn/misc_lib/msg_get.man
++++ b/Wnn/man/3.libwnn/misc_lib/msg_get.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1947,10 +1926,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/misc_lib/msg_get.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/misc_lib/msg_open.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/misc_lib/msg_open.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/misc_lib/msg_open.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/misc_lib/msg_open.man b/Wnn/man/3.libwnn/misc_lib/msg_open.man
+index 1cb23a9..fbcf224 100644
+--- a/Wnn/man/3.libwnn/misc_lib/msg_open.man
++++ b/Wnn/man/3.libwnn/misc_lib/msg_open.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1960,10 +1939,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/misc_lib/msg_open.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_clear.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/rk_lib/rk_clear.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_clear.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/rk_lib/rk_clear.man b/Wnn/man/3.libwnn/rk_lib/rk_clear.man
+index 7db0be9..18c9ff6 100644
+--- a/Wnn/man/3.libwnn/rk_lib/rk_clear.man
++++ b/Wnn/man/3.libwnn/rk_lib/rk_clear.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1973,10 +1952,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_clear.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_dspmd.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/rk_lib/rk_dspmd.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_dspmd.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/rk_lib/rk_dspmd.man b/Wnn/man/3.libwnn/rk_lib/rk_dspmd.man
+index bb3c16d..72bbc01 100644
+--- a/Wnn/man/3.libwnn/rk_lib/rk_dspmd.man
++++ b/Wnn/man/3.libwnn/rk_lib/rk_dspmd.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1986,10 +1965,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_dspmd.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_getc.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/rk_lib/rk_getc.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_getc.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/rk_lib/rk_getc.man b/Wnn/man/3.libwnn/rk_lib/rk_getc.man
+index 55c64f6..339ba16 100644
+--- a/Wnn/man/3.libwnn/rk_lib/rk_getc.man
++++ b/Wnn/man/3.libwnn/rk_lib/rk_getc.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -1999,10 +1978,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_getc.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_init.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/rk_lib/rk_init.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_init.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/rk_lib/rk_init.man b/Wnn/man/3.libwnn/rk_lib/rk_init.man
+index 6d2391c..7ec81eb 100644
+--- a/Wnn/man/3.libwnn/rk_lib/rk_init.man
++++ b/Wnn/man/3.libwnn/rk_lib/rk_init.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -2012,10 +1991,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_init.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_next.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/rk_lib/rk_next.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_next.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/rk_lib/rk_next.man b/Wnn/man/3.libwnn/rk_lib/rk_next.man
+index b7f3cd9..d5f1ec4 100644
+--- a/Wnn/man/3.libwnn/rk_lib/rk_next.man
++++ b/Wnn/man/3.libwnn/rk_lib/rk_next.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -2025,10 +2004,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_next.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_ungetc.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man/3.libwnn/rk_lib/rk_ungetc.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_ungetc.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/3.libwnn/rk_lib/rk_ungetc.man b/Wnn/man/3.libwnn/rk_lib/rk_ungetc.man
+index e830f88..a906436 100644
+--- a/Wnn/man/3.libwnn/rk_lib/rk_ungetc.man
++++ b/Wnn/man/3.libwnn/rk_lib/rk_ungetc.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -2038,140 +2017,162 @@ Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man/3.libwnn/rk_lib/rk_ungetc.man
  .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/2.env/cenv.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/2.env/cenv.man	2001-06-15 03:08:34.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/2.env/cenv.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/4.cmd/jserver.man b/Wnn/man/4.cmd/jserver.man
+index e0663f5..5bd8e6c 100644
+--- a/Wnn/man/4.cmd/jserver.man
++++ b/Wnn/man/4.cmd/jserver.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  .\"
--.TH CENV \  "13 May 1992"
-+.TH CENV 7  "13 May 1992"
- .SH NAME
- cenv \- cWnn Environment Operation Functions.
- .ad
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/2.env/ckey.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/2.env/ckey.man	2007-08-13 18:56:33.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/2.env/ckey.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH CKEY \  "13 May 1992"
-+.TH CKEY 7  "13 May 1992"
- .SH NAME
- ckey \- The standard definition of each function key in 
-        cWnn system.
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/4.cmd/cserver.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/4.cmd/cserver.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/4.cmd/cserver.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH CSERVER \  "13 May 1992"
-+.TH CSERVER 8  "13 May 1992"
- .SH NAME
- cserver \- To start the Chinese server.
- .SH SYNOPSIS
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/4.cmd/cuum.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/4.cmd/cuum.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/4.cmd/cuum.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH CUUM \  "13 May 1992"
-+.TH CUUM 1  "13 May 1992"
- .SH NAME
- cuum \- To start the front-end processor.
- .SH SYNOPSIS
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/4.cmd/cwnnkill.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/4.cmd/cwnnkill.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/4.cmd/cwnnkill.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH CWNNKILL \  "13 May 1992"
-+.TH CWNNKILL 8  "13 May 1992"
- .SH NAME
- cwnnkill \- To terminate the cserver.
- .SH SYNOPSIS
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/4.cmd/cwnnstat.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/4.cmd/cwnnstat.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/4.cmd/cwnnstat.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH CWNNSTAT \  "13 May 1992"
-+.TH CWNNSTAT 1  "13 May 1992"
- .SH NAME
- cwnnstat \- To show the current status of cserver.
- .SH SYNOPSIS
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/cdicsort.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/6.jutil/cdicsort.man	2001-06-15 03:08:35.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/6.jutil/cdicsort.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH CDICSORT \  "13 May 1992"
-+.TH CDICSORT 1  "13 May 1992"
- .SH NAME
- cdicsort \- To sort the text format dictionary.
- .SH SYNOPSIS
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man.en/6.jutil/atod.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man.en/6.jutil/atod.man	2001-06-18 18:09:49.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man.en/6.jutil/atod.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH ATOD \  "30 April 2001" 
-+.TH ATOD 1  "30 April 2001" 
- .SH NAME
+-.TH JSERVER \  "23 June 2001" 
++.TH JSERVER 8  "23 June 2001" 
+ .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man.en/6.jutil/atof.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man.en/6.jutil/atof.man	2001-06-18 18:09:49.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man.en/6.jutil/atof.man	2010-03-27 16:27:17.000000000 +0900
+diff --git a/Wnn/man/4.cmd/uum.man b/Wnn/man/4.cmd/uum.man
+index a1cb07f..6131d91 100644
+--- a/Wnn/man/4.cmd/uum.man
++++ b/Wnn/man/4.cmd/uum.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  .\"
--.TH ATOF \  "30 April 2001" 
-+.TH ATOF 1  "30 April 2001" 
- .SH NAME
- .sv 1
- .nf 
-Index: freewnn-1.1.1~a021+cvs20100325/Wnn/man.en/6.jutil/dtoa.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/Wnn/man.en/6.jutil/dtoa.man	2001-06-18 18:09:49.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/Wnn/man.en/6.jutil/dtoa.man	2010-03-27 16:27:17.000000000 +0900
-@@ -27,7 +27,7 @@
- .\" along with this program; if not, write to the Free Software
- .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- .\"
--.TH DTOA \  "30 April 2001" 
-+.TH DTOA 1  "30 April 2001" 
- .SH NAME
+-.TH UUM \  "28 January 1992" 
++.TH UUM 1  "28 January 1992" 
+ .SH 名称
  .sv 1
  .nf
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/1.intro/cst_end.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/1.intro/cst_end.man	2010-03-27 16:35:58.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/1.intro/cst_end.man	2010-03-27 16:36:04.000000000 +0900
+diff --git a/Wnn/man/4.cmd/wnnkill.man b/Wnn/man/4.cmd/wnnkill.man
+index 0fcf6c6..e6debf2 100644
+--- a/Wnn/man/4.cmd/wnnkill.man
++++ b/Wnn/man/4.cmd/wnnkill.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH WNNKILL \  "28 January 1992" 
++.TH WNNKILL 8  "28 January 1992" 
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/4.cmd/wnnstat.man b/Wnn/man/4.cmd/wnnstat.man
+index 1cc5791..ed29bf7 100644
+--- a/Wnn/man/4.cmd/wnnstat.man
++++ b/Wnn/man/4.cmd/wnnstat.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH WNNSTAT \  "28 January 1992" 
++.TH WNNSTAT 1  "28 January 1992" 
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/6.jutil/atod.man b/Wnn/man/6.jutil/atod.man
+index 25ab20b..34e1028 100644
+--- a/Wnn/man/6.jutil/atod.man
++++ b/Wnn/man/6.jutil/atod.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH ATOD \  "28 January 1992" 
++.TH ATOD 1  "28 January 1992" 
+ .SH 名称
+ .sv 1
+ .nf
+@@ -67,7 +67,7 @@ CSWIDTH=b1[:c1][,b2[:c2][,b3[:c3]]]
+ 
+ UJIS の場合の CSWIDTH は 2,1,2 である。
+ 
+--s は、割当てるメモリの量を指定するオプションであるが、通常は指定する必要
++\-s は、割当てるメモリの量を指定するオプションであるが、通常は指定する必要
+ はない。atod がメモリ領域不足のメッセージを表示して終了した場合に、-s を
+ 指定して再実行させる。
+ 
+diff --git a/Wnn/man/6.jutil/atof.man b/Wnn/man/6.jutil/atof.man
+index e960745..1cdda5a 100644
+--- a/Wnn/man/6.jutil/atof.man
++++ b/Wnn/man/6.jutil/atof.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH ATOF \  "28 January 1992" 
++.TH ATOF 1  "28 January 1992" 
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/6.jutil/dtoa.man b/Wnn/man/6.jutil/dtoa.man
+index f0713ff..bd5115d 100644
+--- a/Wnn/man/6.jutil/dtoa.man
++++ b/Wnn/man/6.jutil/dtoa.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH DTOA \  "28 January 1992" 
++.TH DTOA 1  "28 January 1992" 
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/6.jutil/oldtonew.man b/Wnn/man/6.jutil/oldtonew.man
+index 6026f92..cf7ebbd 100644
+--- a/Wnn/man/6.jutil/oldtonew.man
++++ b/Wnn/man/6.jutil/oldtonew.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH OLDATONEWA \  "28 January 1992" 
++.TH OLDATONEWA 1  "28 January 1992" 
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/6.jutil/wddel.man b/Wnn/man/6.jutil/wddel.man
+index 860f3c0..fdc15c1 100644
+--- a/Wnn/man/6.jutil/wddel.man
++++ b/Wnn/man/6.jutil/wddel.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH WDDEL \  "28 January 1992" 
++.TH WDDEL 1  "28 January 1992" 
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/6.jutil/wdreg.man b/Wnn/man/6.jutil/wdreg.man
+index d05b118..5471027 100644
+--- a/Wnn/man/6.jutil/wdreg.man
++++ b/Wnn/man/6.jutil/wdreg.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH WDREG \  "28 January 1992" 
++.TH WDREG 1  "28 January 1992" 
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/Wnn/man/6.jutil/wnntouch.man b/Wnn/man/6.jutil/wnntouch.man
+index 059c550..e5ee5eb 100644
+--- a/Wnn/man/6.jutil/wnntouch.man
++++ b/Wnn/man/6.jutil/wnntouch.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH WNNTOUCH \  "28 January 1992" 
++.TH WNNTOUCH 1  "28 January 1992" 
+ .SH 名称
+ .sv 1
+ .nf
+diff --git a/cWnn/man/1.intro/cst_end.man b/cWnn/man/1.intro/cst_end.man
+index 36538b3..2647b6d 100644
+--- a/cWnn/man/1.intro/cst_end.man
++++ b/cWnn/man/1.intro/cst_end.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -2181,10 +2182,10 @@ Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/1.intro/cst_end.man
  .SH NAME
  cstartend \- cWnn Startup and Termination
  .ad
-Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/1.intro/cwnn.man
-===================================================================
---- freewnn-1.1.1~a021+cvs20100325.orig/cWnn/man/1.intro/cwnn.man	2010-03-27 16:35:58.000000000 +0900
-+++ freewnn-1.1.1~a021+cvs20100325/cWnn/man/1.intro/cwnn.man	2010-03-27 16:36:04.000000000 +0900
+diff --git a/cWnn/man/1.intro/cwnn.man b/cWnn/man/1.intro/cwnn.man
+index 253d19d..df59773 100644
+--- a/cWnn/man/1.intro/cwnn.man
++++ b/cWnn/man/1.intro/cwnn.man
 @@ -27,7 +27,7 @@
  .\" along with this program; if not, write to the Free Software
  .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -2194,3 +2195,172 @@ Index: freewnn-1.1.1~a021+cvs20100325/cWnn/man/1.intro/cwnn.man
  .SH NAME
  cWnn \- A Chinese Input System Running on Unix Workstations.
  .ad
+diff --git a/cWnn/man/2.env/cenv.man b/cWnn/man/2.env/cenv.man
+index aca9249..08d5f1a 100644
+--- a/cWnn/man/2.env/cenv.man
++++ b/cWnn/man/2.env/cenv.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CENV \  "13 May 1992"
++.TH CENV 7  "13 May 1992"
+ .SH NAME
+ cenv \- cWnn Environment Operation Functions.
+ .ad
+diff --git a/cWnn/man/2.env/ckey.man b/cWnn/man/2.env/ckey.man
+index 8f86aff..7693074 100644
+--- a/cWnn/man/2.env/ckey.man
++++ b/cWnn/man/2.env/ckey.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CKEY \  "13 May 1992"
++.TH CKEY 7  "13 May 1992"
+ .SH NAME
+ ckey \- The standard definition of each function key in 
+        cWnn system.
+diff --git a/cWnn/man/4.cmd/cserver.man b/cWnn/man/4.cmd/cserver.man
+index 817f4da..66fa794 100644
+--- a/cWnn/man/4.cmd/cserver.man
++++ b/cWnn/man/4.cmd/cserver.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CSERVER \  "13 May 1992"
++.TH CSERVER 8  "13 May 1992"
+ .SH NAME
+ cserver \- To start the Chinese server.
+ .SH SYNOPSIS
+diff --git a/cWnn/man/4.cmd/cuum.man b/cWnn/man/4.cmd/cuum.man
+index cad0bb9..098111f 100644
+--- a/cWnn/man/4.cmd/cuum.man
++++ b/cWnn/man/4.cmd/cuum.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CUUM \  "13 May 1992"
++.TH CUUM 1  "13 May 1992"
+ .SH NAME
+ cuum \- To start the front-end processor.
+ .SH SYNOPSIS
+diff --git a/cWnn/man/4.cmd/cwnnkill.man b/cWnn/man/4.cmd/cwnnkill.man
+index 4eebfd0..32ed7e5 100644
+--- a/cWnn/man/4.cmd/cwnnkill.man
++++ b/cWnn/man/4.cmd/cwnnkill.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CWNNKILL \  "13 May 1992"
++.TH CWNNKILL 8  "13 May 1992"
+ .SH NAME
+ cwnnkill \- To terminate the cserver.
+ .SH SYNOPSIS
+diff --git a/cWnn/man/4.cmd/cwnnstat.man b/cWnn/man/4.cmd/cwnnstat.man
+index c6dfb37..650dd85 100644
+--- a/cWnn/man/4.cmd/cwnnstat.man
++++ b/cWnn/man/4.cmd/cwnnstat.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CWNNSTAT \  "13 May 1992"
++.TH CWNNSTAT 1  "13 May 1992"
+ .SH NAME
+ cwnnstat \- To show the current status of cserver.
+ .SH SYNOPSIS
+diff --git a/cWnn/man/6.jutil/catod.man b/cWnn/man/6.jutil/catod.man
+index c7e1855..ffd9393 100644
+--- a/cWnn/man/6.jutil/catod.man
++++ b/cWnn/man/6.jutil/catod.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CATOD \  "13 May 1992"
++.TH CATOD 1  "13 May 1992"
+ .SH NAME
+ catod \- To convert the text format of a dictionary to binary 
+         format.
+diff --git a/cWnn/man/6.jutil/catof.man b/cWnn/man/6.jutil/catof.man
+index 9340577..030b76e 100644
+--- a/cWnn/man/6.jutil/catof.man
++++ b/cWnn/man/6.jutil/catof.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CATOF \  "13 May 1992"
++.TH CATOF 1  "13 May 1992"
+ .SH NAME
+ catof \- To convert the text format of grammatical rules into 
+         binary format.
+diff --git a/cWnn/man/6.jutil/cdicsort.man b/cWnn/man/6.jutil/cdicsort.man
+index d6ba1ef..f869085 100644
+--- a/cWnn/man/6.jutil/cdicsort.man
++++ b/cWnn/man/6.jutil/cdicsort.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CDICSORT \  "13 May 1992"
++.TH CDICSORT 1  "13 May 1992"
+ .SH NAME
+ cdicsort \- To sort the text format dictionary.
+ .SH SYNOPSIS
+diff --git a/cWnn/man/6.jutil/cdtoa.man b/cWnn/man/6.jutil/cdtoa.man
+index 8132eab..cee3388 100644
+--- a/cWnn/man/6.jutil/cdtoa.man
++++ b/cWnn/man/6.jutil/cdtoa.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CDTOA \  "13 May 1992"
++.TH CDTOA 1  "13 May 1992"
+ .SH NAME
+ cdtoa \- To convert the binary format of a dictionary back to
+         text format.
+diff --git a/cWnn/man/6.jutil/cwddel.man b/cWnn/man/6.jutil/cwddel.man
+index 98b9720..57db276 100644
+--- a/cWnn/man/6.jutil/cwddel.man
++++ b/cWnn/man/6.jutil/cwddel.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CWDDEL \  "13 May 1992"
++.TH CWDDEL 1  "13 May 1992"
+ .SH NAME
+ cwddel \- To delete characters/words from the binary format 
+          dictionary.
+diff --git a/cWnn/man/6.jutil/cwdreg.man b/cWnn/man/6.jutil/cwdreg.man
+index 8242821..f28b16b 100644
+--- a/cWnn/man/6.jutil/cwdreg.man
++++ b/cWnn/man/6.jutil/cwdreg.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CWDREG \  "13 May 1992"
++.TH CWDREG 1  "13 May 1992"
+ .SH NAME
+ cwdreg \- To register characters/words into the binary format 
+          dictionary.
+diff --git a/cWnn/man/6.jutil/cwnntouch.man b/cWnn/man/6.jutil/cwnntouch.man
+index 35a5607..81e5515 100644
+--- a/cWnn/man/6.jutil/cwnntouch.man
++++ b/cWnn/man/6.jutil/cwnntouch.man
+@@ -27,7 +27,7 @@
+ .\" along with this program; if not, write to the Free Software
+ .\" Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .\"
+-.TH CWNNTOUCH \  "13 May 1992"
++.TH CWNNTOUCH 1  "13 May 1992"
+ .SH NAME
+ cwnntouch \- To rewrite the header of the dictionary.
+ .SH SYNOPSIS

@@ -1,8 +1,17 @@
-Index: freewnn-1.1.1~a021+cvs20120618/makerule.mk.in
+From: Debian QA Group <packages@qa.debian.org>
+Date: Sat, 5 Sep 2015 18:13:59 +0900
+Subject: hardening-flags
+
 ===================================================================
---- freewnn-1.1.1~a021+cvs20120618.orig/makerule.mk.in	2012-06-18 10:49:32.271609484 +0900
-+++ freewnn-1.1.1~a021+cvs20120618/makerule.mk.in	2012-06-18 10:49:37.043619745 +0900
-@@ -59,7 +59,7 @@
+---
+ makerule.mk.in | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/makerule.mk.in b/makerule.mk.in
+index 7208634..763fffc 100644
+--- a/makerule.mk.in
++++ b/makerule.mk.in
+@@ -59,7 +59,7 @@ all::
  
  CPP = @CPP@
  CC = @CC@
@@ -11,7 +20,7 @@ Index: freewnn-1.1.1~a021+cvs20120618/makerule.mk.in
  
  # Split fuzoku-go preprocessor (for text processing) from CPP.
  FZK_PP = @FZK_PP@
-@@ -113,7 +113,7 @@
+@@ -113,7 +113,7 @@ FZK_PP = @FZK_PP@
  
  CCOPTIONS = @CCOPTIONS@
  ALLDEFINES = $(INCLUDES) $(DEFINES)
