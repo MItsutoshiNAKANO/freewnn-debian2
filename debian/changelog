@@ -1,3 +1,13 @@
+freewnn (1.1.1~a021+cvs20130302-5) unstable; urgency=medium
+
+  * patches/0007-add-egrep-binary-files-text-option.patch:
+  (Closes: #797242)
+  -- Fix FTBFS.
+  * control: (Closes: #714683)
+  -- New Maintainer "Mitsutoshi NAKANO".
+
+ -- Mitsutoshi NAKANO <ItSANgo@gmail.com>  Mon, 07 Sep 2015 21:43:58 +0900
+
 freewnn (1.1.1~a021+cvs20130302-4) unstable; urgency=low
 
   * QA upload.
